@@ -37,13 +37,16 @@ const EditProfileImage = ({ setEditProfileImage, setUserProfile }) => {
     setImageUploading(true);
 
     const user_id = user._id;
-    const response = await fetch("http://localhost:4000/user/update_image", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ user_id, imageUrl }),
-    });
+    const response = await fetch(
+      "https://odin-messaging-app-api.onrender.com/user/update_image",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ user_id, imageUrl }),
+      }
+    );
 
     const json = await response.json();
 

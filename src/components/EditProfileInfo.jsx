@@ -47,22 +47,25 @@ const EditProfileInfo = ({ setEditProfileInfo, setUserProfile }) => {
 
     const user_id = user._id;
 
-    const response = await fetch("http://localhost:4000/user/user_info", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        user_id,
-        firstName,
-        lastName,
-        email,
-        profession,
-        employer,
-        location,
-        skills,
-      }),
-    });
+    const response = await fetch(
+      "https://odin-messaging-app-api.onrender.com/user/user_info",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          user_id,
+          firstName,
+          lastName,
+          email,
+          profession,
+          employer,
+          location,
+          skills,
+        }),
+      }
+    );
 
     const json = await response.json();
 

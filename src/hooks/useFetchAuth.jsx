@@ -12,13 +12,16 @@ export const useFetchAuth = () => {
     setLoading(true);
     setError(null);
 
-    const response = await fetch(`http://localhost:4000/user/${authType}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(authData),
-    });
+    const response = await fetch(
+      `https://odin-messaging-app-api.onrender.com/${authType}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(authData),
+      }
+    );
 
     const json = await response.json();
 

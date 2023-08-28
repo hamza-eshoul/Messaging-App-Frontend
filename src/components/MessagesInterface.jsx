@@ -30,7 +30,7 @@ const MessagesInterface = ({
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io("http://localhost:4000");
+    socket.current = io("https://odin-messaging-app-api.onrender.com");
     socket.current.on("getMessage", (addedMessage) => {
       console.log("get message ran with the added message", addedMessage);
 

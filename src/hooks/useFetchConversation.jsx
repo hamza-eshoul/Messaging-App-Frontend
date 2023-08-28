@@ -8,13 +8,16 @@ export const useFetchConversation = () => {
     setLoading(true);
     setError(null);
 
-    const response = await fetch("http://localhost:4000/conversation", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ user1_id, user2_id }),
-    });
+    const response = await fetch(
+      "https://odin-messaging-app-api.onrender.com/conversation",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ user1_id, user2_id }),
+      }
+    );
 
     const json = await response.json();
 

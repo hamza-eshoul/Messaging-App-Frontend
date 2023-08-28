@@ -38,7 +38,7 @@ const EditCoverImage = ({ setEditCoverImage, setUserProfile }) => {
 
     const user_id = user._id;
     const response = await fetch(
-      "http://localhost:4000/user/update_cover_image",
+      "https://odin-messaging-app-api.onrender.com/user/update_cover_image",
       {
         method: "PUT",
         headers: {

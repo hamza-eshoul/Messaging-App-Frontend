@@ -19,7 +19,9 @@ const UserMessagesList = ({
 
   useEffect(() => {
     const fetchAllConversations = async () => {
-      const response = await fetch("http://localhost:4000/conversation");
+      const response = await fetch(
+        "https://odin-messaging-app-api.onrender.com/conversation"
+      );
 
       const json = await response.json();
 
