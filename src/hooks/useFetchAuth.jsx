@@ -13,7 +13,7 @@ export const useFetchAuth = () => {
     setError(null);
 
     const response = await fetch(
-      `https://odin-messaging-app-api.onrender.com/${authType}`,
+      `https://odin-messaging-app-api.onrender.com/user/${authType}`,
       {
         method: "POST",
         headers: {
