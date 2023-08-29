@@ -254,7 +254,7 @@ const Profile = () => {
                   <div className="flex gap-2 pt-3 items-center">
                     <h3 className="text-zinc-500">Main Skills •</h3>
                     {userProfile && userProfile.skills.length !== 0 ? (
-                      <>
+                      <React.Fragment key={skill}>
                         {userProfile.skills.map((skill) => (
                           <>
                             {" "}
@@ -268,7 +268,7 @@ const Profile = () => {
                             )}
                           </>
                         ))}
-                      </>
+                      </React.Fragment>
                     ) : (
                       <span className="text-zinc-800 italic ">
                         {" "}

@@ -9,8 +9,6 @@ const MessageCardPreview = ({
   selectedUserConversation,
   setSelectedUserConversation,
   conversations,
-  usersList,
-  setUsersList,
 }) => {
   const [selectedConversation, setSelectedConversation] = useState(null);
   const [previewMessage, setPreviewMessage] = useState(null);
@@ -62,16 +60,18 @@ const MessageCardPreview = ({
   useEffect(() => {
     populateEmptyConversation();
 
-    conversations.map((conversation) => {
-      if (
-        (conversation.user1_id == user._id &&
-          conversation.user2_id == loggedUser._id) ||
-        (conversation.user1_id == loggedUser._id &&
-          conversation.user2_id == user._id)
-      ) {
-        populateUserConversation(conversation);
-      }
-    });
+    if (conversations) {
+      conversations.map((conversation) => {
+        if (
+          (conversation.user1_id == user._id &&
+            conversation.user2_id == loggedUser._id) ||
+          (conversation.user1_id == loggedUser._id &&
+            conversation.user2_id == user._id)
+        ) {
+          populateUserConversation(conversation);
+        }
+      });
+    }
   }, [conversations]);
 
   return (
