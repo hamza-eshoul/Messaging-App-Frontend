@@ -10,6 +10,11 @@ export default {
         lightOrange: "#fcebe5",
         primaryGray: "#eff1f2",
       },
+      screens: {
+        "2xsm": "390px",
+        xsm: "500px",
+        xmd: "880px",
+      },
     },
   },
   plugins: [],
