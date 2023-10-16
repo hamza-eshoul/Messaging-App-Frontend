@@ -21,7 +21,7 @@ const UserMessagesList = ({
     <section
       className={`w-full ${
         isConversationActive ? "hidden" : ""
-      } h-[calc(100%-48px)] border-r-[1px] border-zinc-300 md:block md:w-[40%] xl:w-[30%]`}
+      } h-[calc(100%-48px)] border-r-[1px] border-zinc-300 md:block md:w-[40%] xmd:h-full xl:w-[30%]`}
     >
       <header className="flex h-[8%] items-center gap-2  border-b-[1px] border-zinc-300 py-6 pl-4">
         <RiMenuFoldFill className="text-2xl" />
