@@ -6,6 +6,8 @@ This is the frontend repository for the Full Stack Messaging App Project built f
 
 The goal of the project was to build a messaging web app that allows users to send and receive real-time messages.
 
+The Socket.IO-client library was used for the real-time communication functionality utilized by the project's client.
+
 - Project's Live Preview url - https://messaging-app-project.onrender.com
 - Project's Parent Repository - https://github.com/skynter/Messaging-App
 - Project's Backend Repository - https://github.com/skynter/Messaging-App-Backend
@@ -14,6 +16,7 @@ The goal of the project was to build a messaging web app that allows users to se
 
 - ReactJS
 - Tailwind CSS
+- Socket.io-client
 
 ## Key features
 

@@ -6,6 +6,8 @@ Ce dépôt comprend la partie frontend du Messaging App projet créé pour [Odin
 
 L'objectif de ce projet est de créer une application Web de messagerie permettant aux utilisateurs d'envoyer et de recevoir des messages en temps réel.
 
+La bibliothèque Socket.IO-client a été utilisée pour la fonctionnalité de communication en temps réel utilisée par la partie frontend du projet.
+
 - Lien du projet - https://messaging-app-project.onrender.com
 - Dépôt principal du projet - https://github.com/skynter/Messaging-App
 - Dépôt backend du projet - https://github.com/skynter/Messaging-App-Backend
@@ -14,6 +16,7 @@ L'objectif de ce projet est de créer une application Web de messagerie permetta
 
 - ReactJS
 - Tailwind CSS
+- Socket.io-client
 
 ## Principales Fonctionnalités
 
@@ -25,7 +28,7 @@ L'objectif de ce projet est de créer une application Web de messagerie permetta
 
 Pour exécuter le projet localement sur votre machine :
 
-- Exécutez la commande suivante pour installer les dépendances du projet : 
+- Exécutez la commande suivante pour installer les dépendances du projet :
 
 ```
 npm install
