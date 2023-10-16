@@ -21,14 +21,14 @@ const UserMessagesList = ({
     <section
       className={`w-full ${
         isConversationActive ? "hidden" : ""
-      } mb-[48px] border-r-[1px] border-zinc-300 md:block md:w-[40%] xmd:mb-0 xl:w-[30%]`}
+      } h-[calc(100%-48px)] border-r-[1px] border-zinc-300 md:block md:w-[40%] xl:w-[30%]`}
     >
-      <header className="hidden h-[8%] items-center gap-2  border-b-[1px] border-zinc-300 pl-4 xmd:flex">
+      <header className="flex h-[8%] items-center gap-2  border-b-[1px] border-zinc-300 py-6 pl-4">
         <RiMenuFoldFill className="text-2xl" />
         <h1 className="pb-1 text-lg font-medium">User Messages</h1>
       </header>
 
-      <section className="flex h-full flex-col overflow-y-auto xmd:h-[92%]">
+      <section className="flex h-[92%] flex-col overflow-y-auto">
         {isPending && (
           <Loading
             loadingColor={"#fa4d12"}
