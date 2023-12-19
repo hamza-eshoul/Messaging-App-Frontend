@@ -14,7 +14,7 @@ const UpdateAboutMe = ({ userProfile, setIsUpdateAboutMe, setUserProfile }) => {
   const [isUpdateAboutText, setIsUpdateAboutText] = useState(false);
 
   const { updateUser, isPending, error } = useUpdateUser(
-    "https://odin-messaging-app-api.onrender.com/user/profile_about",
+    "https://odin-messaging-app-api.onrender.com/users/profile_about",
   );
 
   useEffect(() => {
