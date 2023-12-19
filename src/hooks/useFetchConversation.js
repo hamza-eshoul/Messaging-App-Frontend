@@ -14,19 +14,8 @@ export const useFetchConversation = (selectedUserConversation) => {
     setConversation(null);
     setError(null);
 
-    const { user1_id, user2_id } = selectedUserConversation;
-
-    console.log(
-      "selectedUserConversation",
-      selectedUserConversation,
-      "user1_id",
-      user1_id,
-      "user2_id",
-      user2_id,
-    );
-
     const response = await fetch(
-      `https://odin-messaging-app-api.onrender.com/conversations/${user1_id}/${user2_id}`,
+      `https://odin-messaging-app-api.onrender.com/conversations/${user2_id}`,
       {
         method: "GET",
         headers: {
