@@ -10,8 +10,6 @@ export const useUpdateUser = (update_url) => {
     setIsPending(true);
     setError(null);
 
-    console.log("this is the user token in useUpdateUser hook", user.token);
-
     const response = await fetch(update_url, {
       method: "PUT",
       headers: {

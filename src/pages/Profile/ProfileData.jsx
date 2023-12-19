@@ -49,7 +49,7 @@ const ProfileData = ({ userProfile, setUserProfile, isLoggedInUser }) => {
               {userProfile.firstName} {userProfile.lastName}
             </h2>
 
-            <SiPreact className="cursor-pointer text-xl hover:opacity-50 sm:text-2xl" />
+            <SiPreact className="cursor-pointer text-xl hover:opacity-50 sm:text-3xl" />
           </div>
 
           <div className="text-sm text-zinc-500 sm:text-base">
